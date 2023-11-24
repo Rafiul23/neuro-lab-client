@@ -5,6 +5,7 @@ import About from './../Components/About/About';
 import Contact from './../Components/Contact/Contact';
 import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
+import AllTests from './../Components/AllTests/AllTests';
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         {
             path: '/login',
             element: <Login></Login>
+        },
+        {
+            path: '/alltests',
+            element: <AllTests></AllTests> 
         }
       ]
     },
