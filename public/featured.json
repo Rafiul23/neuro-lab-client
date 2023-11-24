@@ -1,0 +1,31 @@
+[
+    {
+      "test_name": "Blood Test",
+      "image": "https://i.ibb.co/wgR5SG1/cdc-IFp-Qtennlj8-unsplash.jpg",
+      "test_description": "Comprehensive blood analysis",
+      "price": 75.99,
+      "booked_by": 15
+    },
+    {
+      "test_name": "X-Ray Scan",
+      "image": "https://i.ibb.co/RjGRN44/jonathan-borba-v-2-FRXEba94-unsplash.jpg",
+      "test_description": "Full-body X-ray examination",
+      "price": 120.50,
+      "booked_by": 18
+    },
+    {
+      "test_name": "Ultrasound",
+      "image": "https://i.ibb.co/QFjyjst/national-cancer-institute-s1-ZKl-L9-Qa-Y4-unsplash.jpg",
+      "test_description": "Abdominal ultrasound imaging",
+      "price": 90.25,
+      "booked_by": 16
+    },
+    {
+      "test_name": "MRI Scan",
+      "image": "https://i.ibb.co/K7FhSKy/national-cancer-institute-f2a-DTqfnqf-E-unsplash.jpg",
+      "test_description": "Brain and spinal MRI",
+      "price": 200.00,
+      "booked_by": 20
+    }
+  ]
+  
