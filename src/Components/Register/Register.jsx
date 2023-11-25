@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Register = () => {
@@ -16,7 +17,7 @@ const Register = () => {
             <div className="flex justify-between items-center flex-col lg:flex-row py-20">
                 <div className="text-center w-1/2">
                     <h1 className="text-5xl font-bold text-[#1fc281]">Register now!</h1>
-                    <p className="py-6">To get our services, you have to register first</p>
+                    <p className="py-6 text-3xl">To get our services, you have to register first</p>
                 </div>
                 <div className="card  w-1/2 shadow-2xl bg-base-100">
                     <form className="card-body">
@@ -70,22 +71,7 @@ const Register = () => {
                                 }
                             </select>
                         </div>
-                        <div className='form-control'>
-                            <label className="label">
-                                <span className="label-text">Blood Group</span>
-                            </label>
-                            <select defaultValue='default' className="select select-accent w-full max-w-xs">
-                                <option disabled value='default'>Select Your Blood Group</option>
-                                <option>A+</option>
-                                <option>A-</option>
-                                <option>B+</option>
-                                <option>B-</option>
-                                <option>AB+</option>
-                                <option>AB-</option>
-                                <option>O+</option>
-                                <option>O-</option>
-                            </select>
-                        </div>
+                        
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
@@ -99,10 +85,19 @@ const Register = () => {
                             <input type="password" placeholder="password" className="input input-bordered" required />
 
                         </div>
-                        <div className="form-control mt-6">
-                            <button className="btn bg-[#1fc281]">Register</button>
+                        <div className="form-control">
+                            <label className="label">
+                                <span className="label-text">Confirm Password</span>
+                            </label>
+                            <input type="password" placeholder="confirm password" className="input input-bordered" required />
+
                         </div>
+                        <div className="form-control mt-6">
+                            <button className="btn bg-[#1fc281] text-white">Register</button>
+                        </div>
+                        <p>Already have an account? Please! <Link to='/login' className='text-[#1fc281] font-bold'>Login</Link></p>
                     </form>
+
                 </div>
             </div>
         </div>
