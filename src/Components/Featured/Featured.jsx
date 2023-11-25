@@ -13,7 +13,7 @@ const Featured = () => {
     }, [])
 
     return (
-        <div>
+        <div className='pt-10'>
             <SectionTitle
             heading='Our Featured Tests'
             subheading='Check our Featured tests'

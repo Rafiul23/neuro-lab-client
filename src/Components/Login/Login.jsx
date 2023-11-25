@@ -5,7 +5,7 @@ const Login = () => {
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="flex flex-col py-20 lg:flex-row-reverse">
-                <div className="text-center w-1/2">
+                <div className="text-center lg:w-1/2">
                     <h1 className="text-5xl my-4 text-[#1fc281] font-bold">Login now!</h1>
                    <img src={loginImg} alt="" />
                 </div>
