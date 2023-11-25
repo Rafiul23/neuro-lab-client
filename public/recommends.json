@@ -1,0 +1,50 @@
+[
+    {   
+        "_id": 1,
+        "image": "https://i.ibb.co/Hggptnb/kike-vega-F2qh3yjz6-Jk-unsplash.jpg",
+        "recommendations":  "Engage in at least 30 minutes of moderate exercise daily." 
+    },
+    {
+        "_id": 2,
+        "image": "https://i.ibb.co/L0kpjkR/jenny-hill-m-QVWb7k-Uo-OE-unsplash.jpg",
+        "recommendations": "Incorporate strength training exercises into your routine at least twice a week."
+    }, 
+    {
+        "_id": 3,
+        "image": "https://i.ibb.co/NsJY7Fg/boxed-water-is-better-7-LDR1-Jw0-YTM-unsplash.jpg",
+        "recommendations": "Find activities you enjoy to make exercising more enjoyable and sustainable."
+    },
+    {
+        "_id": 4,
+        "image": "https://i.ibb.co/zx0RxPT/jan-landau-a39-QV-6-n-Xs-unsplash.jpg",
+        "recommendations": "Eat a variety of fruits and vegetables daily."
+    },
+    {
+        "_id": 5,
+        "image": "https://i.ibb.co/4PPWH7h/haseeb-jamil-J9l-D6-FS6-cs-unsplash.jpg",
+        "recommendations": "Limit processed foods and focus on whole, unprocessed foods."
+    },
+    {
+        "_id": 6,
+        "image": "https://i.ibb.co/029bKfp/nigel-msipa-0w5qb6-RPt-Gk-unsplash.jpg",
+        "recommendations": "Stay hydrated by drinking plenty of water throughout the day."
+    },
+    {
+        "_id": 7,
+        "image": "https://i.ibb.co/n3C7870/kinga-howard-5-Nz-Ofw-Xo-H88-unsplash.jpg",
+        "recommendations": "Aim for 7-9 hours of quality sleep per night for adults."
+    },
+    {
+        "_id": 8,
+        "image": "https://i.ibb.co/LYQDKRp/christopher-jolly-Gqb-U78bd-JFM-unsplash.jpg",
+        "recommendations": "Create a relaxing bedtime routine to improve sleep quality."
+    },
+    {
+        "_id": 9,
+        "image": "https://i.ibb.co/grrdTVk/ludovic-toinel-n-Gwya-WKFRVI-unsplash.jpg",
+        "recommendations": "Avoid screens (phones, tablets, computers) before bedtime to promote better sleep."
+    }
+]
+
+
+  
