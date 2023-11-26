@@ -2,30 +2,38 @@
     {
       "test_name": "Blood Test",
       "image": "https://i.ibb.co/wgR5SG1/cdc-IFp-Qtennlj8-unsplash.jpg",
-      "test_description": "Comprehensive blood analysis",
+      "test_description": "A blood test is a medical procedure that involves collecting a sample of blood to analyze various aspects of health. It's a vital diagnostic tool used to assess overall health, detect diseases, and monitor ongoing conditions. These tests can evaluate cholesterol levels, detect infections, assess organ function, check for specific markers indicating diseases like diabetes or anemia, and much more. Blood tests are critical in preventive care, providing valuable insights into an individual's health status, guiding treatment decisions, and enabling early detection of potential health issues, contributing significantly to maintaining a healthy life.",
       "price": 75.99,
-      "booked_by": 15
+      "slot": 10,
+      "category": "featured",
+      "date": "12-03-2023"
     },
     {
       "test_name": "X-Ray Scan",
       "image": "https://i.ibb.co/RjGRN44/jonathan-borba-v-2-FRXEba94-unsplash.jpg",
-      "test_description": "Full-body X-ray examination",
+      "test_description": "X-ray scans are imaging procedures that use low doses of radiation to capture images of the body's internal structures. They're invaluable tools in diagnosing and monitoring various medical conditions, such as bone fractures, lung infections, and dental issues. X-rays work by passing electromagnetic waves through the body, creating detailed images that help healthcare professionals visualize bones, organs, and tissues. These scans aid in identifying fractures, abnormalities, or diseases, guiding accurate treatment plans. X-rays are quick, non-invasive, and play a crucial role in diagnosing ailments, allowing for timely interventions and improved patient care.",
       "price": 120.50,
-      "booked_by": 18
+      "slot": 12,
+      "category": "featured",
+      "date": "12-01-2023"
     },
     {
       "test_name": "Ultrasound",
       "image": "https://i.ibb.co/QFjyjst/national-cancer-institute-s1-ZKl-L9-Qa-Y4-unsplash.jpg",
-      "test_description": "Abdominal ultrasound imaging",
+      "test_description": "Ultrasound imaging, or sonography, employs high-frequency sound waves to create real-time images of internal body structures. This non-invasive and painless procedure helps visualize organs, tissues, and blood flow patterns without radiation exposure. Ultrasound is widely used during pregnancy to monitor fetal development and detect potential issues. Additionally, it aids in diagnosing conditions affecting organs like the heart, liver, kidneys, and reproductive organs. Its versatility extends to guiding medical procedures, such as biopsies or injections. Ultrasound's safety, real-time imaging capability, and ability to capture dynamic movements make it an indispensable tool in healthcare for accurate diagnosis and monitoring.",
       "price": 90.25,
-      "booked_by": 16
+      "slot": 15,
+      "category": "featured",
+      "date": "12-03-2023"
     },
     {
       "test_name": "MRI Scan",
       "image": "https://i.ibb.co/K7FhSKy/national-cancer-institute-f2a-DTqfnqf-E-unsplash.jpg",
-      "test_description": "Brain and spinal MRI",
+      "test_description": "Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique that uses powerful magnets and radio waves to generate detailed, cross-sectional images of the body's internal structures. This technology provides high-resolution images of organs, soft tissues, nerves, and bones, aiding in diagnosing various conditions like brain tumors, spinal injuries, joint problems, and more. Unlike X-rays or CT scans, MRI does not use ionizing radiation, enhancing its safety. The exceptional clarity and ability to capture different tissue types make MRI an indispensable tool for precise diagnosis, treatment planning, and monitoring of numerous medical conditions, ensuring comprehensive and accurate healthcare management.",
       "price": 200.00,
-      "booked_by": 20
+      "slot": 10,
+      "category": "featured",
+      "date": "12-01-2023"
     }
   ]
   

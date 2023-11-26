@@ -1,0 +1,119 @@
+[
+    {
+      "image": "https://i.ibb.co/26jRJPc/nguy-n-hi-p-2r-NHli-X6-XHk-unsplash.jpg",
+      "test_name": "Complete Blood Count",
+      "slot": 12,
+      "test_description": "The Complete Blood Count (CBC) is a common blood test that evaluates your overall health and detects a variety of disorders, including anemia, infection, and leukemia. It measures various components of your blood, such as red blood cells, white blood cells, and platelets. This test is essential for diagnosing and monitoring various medical conditions.",
+      "date": "12-05-2023",
+      "price": 50.99
+    },
+    {
+      "image": "https://i.ibb.co/QCVdmrv/hush-naidoo-jade-photography-Zp7ebyti3-MU-unsplash.jpg",
+      "test_name": "Cholesterol Panel",
+      "slot": 10,
+      "test_description": "The Cholesterol Panel is a series of blood tests used to measure different types of cholesterol and triglycerides in your blood. It helps assess your risk of heart disease and provides vital information about your lipid profile. Monitoring cholesterol levels is crucial for maintaining heart health.",
+      "date": "12-08-2023",
+      "price": 65.50
+    },
+    {
+      "image": "https://i.ibb.co/5FY6FDZ/nguyen-dang-hoang-nhu-q-Dg-TQOYk6-B8-unsplash.jpg",
+      "test_name": "Thyroid Function Test",
+      "slot": 14,
+      "test_description": "The Thyroid Function Test evaluates the thyroid gland's performance in producing hormones that regulate metabolism. It measures levels of thyroid-stimulating hormone (TSH), T3, and T4 hormones. Abnormalities in thyroid function can lead to various health issues, including weight changes, fatigue, and mood swings.",
+      "date": "12-10-2023",
+      "price": 75.25
+    },
+    {
+      "image": "https://i.ibb.co/RS5dwdY/national-cancer-institute-7cj-Eo-VWKb-Jc-unsplash.jpg",
+      "test_name": "Liver Function Panel",
+      "slot": 10,
+      "test_description": "The Liver Function Panel is a group of blood tests that assesses the liver's health and function. It measures levels of enzymes, proteins, and bilirubin, providing insights into liver diseases or conditions such as hepatitis, cirrhosis, or liver damage.",
+      "date": "12-05-2023",
+      "price": 85.00
+    },
+    {
+      "image": "https://i.ibb.co/s5SZ5X0/cdc-JYn-YHd-D5-V3w-unsplash.jpg",
+      "test_name": "Urinalysis",
+      "slot": 12,
+      "test_description": "Urinalysis is a simple test used to examine the physical and chemical properties of urine. It helps detect urinary tract infections, kidney problems, diabetes, and other conditions. This test involves examining urine for cells, bacteria, and substances such as glucose or proteins.",
+      "date": "12-06-2023",
+      "price": 40.75
+    },
+    {
+      "image": "https://i.ibb.co/Ns9t2vC/anirudh-Uiw-Ut-Eq-ROEs-unsplash.jpg",
+      "test_name": "Hemoglobin A1c",
+      "slot": 10,
+      "test_description": "The Hemoglobin A1c test measures average blood sugar levels over the past 2-3 months. It's a crucial test for monitoring and diagnosing diabetes. This test provides insights into long-term glucose control and helps in managing diabetes effectively.",
+      "date": "12-03-2023",
+      "price": 60.00
+    },
+    {
+      "image": "https://i.ibb.co/fdnpfPx/lucas-vasques-9vn-ACv-X2748-unsplash.jpg",
+      "test_name": "Bone Density Test",
+      "slot": 14,
+      "test_description": "The Bone Density Test, also known as Dual-Energy X-ray Absorptiometry (DEXA), measures bone mineral density to assess bone health and risk of fractures or osteoporosis. It helps in evaluating bone strength and detecting bone loss, guiding preventive measures and treatments.",
+      "date": "12-04-2023",
+      "price": 95.80
+    },
+    {
+      "image": "https://i.ibb.co/48tBFqv/joshua-chehov-ANgv6j-N1-OUs-unsplash.jpg",
+      "test_name": "Electrocardiogram (ECG/EKG)",
+      "slot": 15,
+      "test_description": "An Electrocardiogram (ECG/EKG) is a test that records the electrical activity of the heart. It helps diagnose heart conditions by displaying information about heart rate, rhythm, and any abnormalities in the heart's function. This test is essential for assessing cardiac health.",
+      "date": "12-08-2023",
+      "price": 55.25
+    },
+    {
+      "image": "https://i.ibb.co/5T0kwDJ/national-cancer-institute-an2lygq-OQHY-unsplash.jpg",
+      "test_name": "Pap Smear",
+      "slot": 12,
+      "test_description": "A Pap Smear is a screening test for cervical cancer. It involves collecting cells from the cervix to examine for abnormalities or precancerous changes. Regular Pap Smears are crucial for early detection and prevention of cervical cancer.",
+      "date": "12-09-2023",
+      "price": 70.50
+    },
+    {
+      "image": "https://i.ibb.co/pQWCY6K/mat-napo-k-Qr-Bava-F-Fk-unsplash.jpg",
+      "test_name": "Allergy Testing",
+      "slot": 10,
+      "test_description": "Allergy Testing helps identify specific allergens that trigger allergic reactions. It involves various tests, such as skin prick tests or blood tests, to determine allergens causing allergic symptoms. Understanding allergens is essential for effective allergy management.",
+      "date": "12-08-2023",
+      "price": 80.30
+    },
+    {
+        "test_name": "Blood Test",
+        "image": "https://i.ibb.co/wgR5SG1/cdc-IFp-Qtennlj8-unsplash.jpg",
+        "test_description": "A blood test is a medical procedure that involves collecting a sample of blood to analyze various aspects of health. It's a vital diagnostic tool used to assess overall health, detect diseases, and monitor ongoing conditions. These tests can evaluate cholesterol levels, detect infections, assess organ function, check for specific markers indicating diseases like diabetes or anemia, and much more. Blood tests are critical in preventive care, providing valuable insights into an individual's health status, guiding treatment decisions, and enabling early detection of potential health issues, contributing significantly to maintaining a healthy life.",
+        "price": 75.99,
+        "slot": 10,
+        "category": "featured",
+        "date": "12-03-2023"
+      },
+      {
+        "test_name": "X-Ray Scan",
+        "image": "https://i.ibb.co/RjGRN44/jonathan-borba-v-2-FRXEba94-unsplash.jpg",
+        "test_description": "X-ray scans are imaging procedures that use low doses of radiation to capture images of the body's internal structures. They're invaluable tools in diagnosing and monitoring various medical conditions, such as bone fractures, lung infections, and dental issues. X-rays work by passing electromagnetic waves through the body, creating detailed images that help healthcare professionals visualize bones, organs, and tissues. These scans aid in identifying fractures, abnormalities, or diseases, guiding accurate treatment plans. X-rays are quick, non-invasive, and play a crucial role in diagnosing ailments, allowing for timely interventions and improved patient care.",
+        "price": 120.50,
+        "slot": 12,
+        "category": "featured",
+        "date": "12-01-2023"
+      },
+      {
+        "test_name": "Ultrasound",
+        "image": "https://i.ibb.co/QFjyjst/national-cancer-institute-s1-ZKl-L9-Qa-Y4-unsplash.jpg",
+        "test_description": "Ultrasound imaging, or sonography, employs high-frequency sound waves to create real-time images of internal body structures. This non-invasive and painless procedure helps visualize organs, tissues, and blood flow patterns without radiation exposure. Ultrasound is widely used during pregnancy to monitor fetal development and detect potential issues. Additionally, it aids in diagnosing conditions affecting organs like the heart, liver, kidneys, and reproductive organs. Its versatility extends to guiding medical procedures, such as biopsies or injections. Ultrasound's safety, real-time imaging capability, and ability to capture dynamic movements make it an indispensable tool in healthcare for accurate diagnosis and monitoring.",
+        "price": 90.25,
+        "slot": 15,
+        "category": "featured",
+        "date": "12-03-2023"
+      },
+      {
+        "test_name": "MRI Scan",
+        "image": "https://i.ibb.co/K7FhSKy/national-cancer-institute-f2a-DTqfnqf-E-unsplash.jpg",
+        "test_description": "Magnetic Resonance Imaging (MRI) is a non-invasive imaging technique that uses powerful magnets and radio waves to generate detailed, cross-sectional images of the body's internal structures. This technology provides high-resolution images of organs, soft tissues, nerves, and bones, aiding in diagnosing various conditions like brain tumors, spinal injuries, joint problems, and more. Unlike X-rays or CT scans, MRI does not use ionizing radiation, enhancing its safety. The exceptional clarity and ability to capture different tissue types make MRI an indispensable tool for precise diagnosis, treatment planning, and monitoring of numerous medical conditions, ensuring comprehensive and accurate healthcare management.",
+        "price": 200.00,
+        "slot": 10,
+        "category": "featured",
+        "date": "12-01-2023"
+      }
+  ]
+  
