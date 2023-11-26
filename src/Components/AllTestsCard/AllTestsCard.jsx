@@ -15,7 +15,7 @@ const AllTestsCard = ({ test }) => {
                 <p>Slot: {slot}</p>
                 <p>Date: {date}</p>
                 <div className="card-actions justify-end">
-                    <Link to={`/test/${_id}`}>
+                    <Link to={`/alltests/${_id}`}>
                     <button className="btn my-3 bg-[#1fc281]">See More</button>
                     </Link>
                 </div>

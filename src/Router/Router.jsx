@@ -6,6 +6,7 @@ import Contact from './../Components/Contact/Contact';
 import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
 import AllTests from './../Components/AllTests/AllTests';
+import TestDetails from "../Components/TestDetails/TestDetails";
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
         {
             path: '/alltests',
             element: <AllTests></AllTests> 
+        },
+        {
+            path: '/alltests/:id',
+            element: <TestDetails></TestDetails>,
+            loader: ({params})=> fetch(`http://localhost:5000/alltests/${params.id}`)
         }
       ]
     },
