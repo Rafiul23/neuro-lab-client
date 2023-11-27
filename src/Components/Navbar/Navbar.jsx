@@ -1,38 +1,51 @@
 import { NavLink } from "react-router-dom";
+import useAuth from "../../Hooks/useAuth";
 
 
 const Navbar = () => {
 
+    const { logOut, user } = useAuth();
+
+    const handleLogOut = () =>{
+        logOut()
+        .then(result =>{
+            console.log(result);
+        })
+        .catch(error =>{
+            console.log(error);
+        })
+    }
+
     const navlinks = <>
         <li className='mr-4'><NavLink to='/'
-         className={({ isActive, isPending }) =>
-         isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
-       }
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+            }
         >Home</NavLink></li>
 
         <li className='mr-4'><NavLink to='/about'
-             className={({ isActive, isPending }) =>
-             isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
-           }
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+            }
         >About Us</NavLink></li>
 
         <li className='mr-4'><NavLink to='/contact'
-             className={({ isActive, isPending }) =>
-             isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
-           }
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+            }
         >Contact Us</NavLink></li>
 
         <li className='mr-4'><NavLink to='/dashboard'
-             className={({ isActive, isPending }) =>
-             isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
-           }
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+            }
         >Dashboard</NavLink></li>
 
-        <li className='mr-4'><NavLink to='/login'
-             className={({ isActive, isPending }) =>
-             isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
-           }
-        >Login</NavLink></li>
+        <li className='mr-4'><NavLink to='/register'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+            }
+        >Register</NavLink></li>
     </>
 
     return (
@@ -54,7 +67,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                
+                {
+                    user && <button onClick={handleLogOut} className="btn btn-outline bg-white">LogOut</button>
+                }
             </div>
         </div>
     );

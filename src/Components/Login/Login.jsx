@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import loginImg from '../../assets/login.png';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     return (
@@ -29,6 +30,8 @@ const Login = () => {
                             <button className="btn bg-[#1fc281] text-white">Login</button>
                         </div>
                         <p className='py-4'>New to our website? Please! <Link to='/register' className='text-[#1fc281] font-bold'>Register</Link></p>
+
+                        <SocialLogin></SocialLogin>
                     </form>
                     
                 </div>

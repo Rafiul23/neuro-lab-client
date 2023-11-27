@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SocialLogin from "../SocialLogin/SocialLogin";
 
 
 const Register = () => {
@@ -96,6 +97,7 @@ const Register = () => {
                             <button className="btn bg-[#1fc281] text-white">Register</button>
                         </div>
                         <p>Already have an account? Please! <Link to='/login' className='text-[#1fc281] font-bold'>Login</Link></p>
+                        <SocialLogin></SocialLogin>
                     </form>
 
                 </div>
