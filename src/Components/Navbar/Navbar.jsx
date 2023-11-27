@@ -6,14 +6,14 @@ const Navbar = () => {
 
     const { logOut, user } = useAuth();
 
-    const handleLogOut = () =>{
+    const handleLogOut = () => {
         logOut()
-        .then(result =>{
-            console.log(result);
-        })
-        .catch(error =>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result);
+            })
+            .catch(error => {
+                console.log(error);
+            })
     }
 
     const navlinks = <>
@@ -67,6 +67,13 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
+                {
+                    user && <img className="rounded-full w-8 h-8 md:w-10 mr-3 md:h-10" src={user?.photoURL} />
+                }
+
+                {
+                    user && <p className="text-white text-sm md:text-lg mr-3 font-bold">{user?.displayName}</p>
+                }
                 {
                     user && <button onClick={handleLogOut} className="btn btn-outline bg-white">LogOut</button>
                 }
