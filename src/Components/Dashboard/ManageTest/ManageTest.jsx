@@ -77,9 +77,9 @@ const ManageTest = () => {
                                 </td>
                                 <td>$ {test.price}</td>
                                 <td>
-                                    <Link to={`/dashboard/updateItem/${test._id}`}>
+                                    <Link to={`/dashboard/updateTestData/${test._id}`}>
                                         <button
-
+                                            
                                             className="btn bg-[#1fc281] btn-ghost btn-lg">
                                             <FaEdit className="text-white"></FaEdit>
 

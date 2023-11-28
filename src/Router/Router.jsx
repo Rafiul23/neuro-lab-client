@@ -17,6 +17,7 @@ import Reservation from './../Components/Dashboard/Reservation/Reservation';
 import MyProfile from './../Components/Dashboard/MyProfile/MyProfile';
 import TestResult from './../Components/Dashboard/TestResult/TestResult';
 import Appointments from './../Components/Dashboard/Appointments/Appointments';
+import UpdateTest from "../Components/Dashboard/UpdateTest/UpdateTest";
 
 const router = createBrowserRouter([
     {
@@ -69,6 +70,11 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/manageTest',
                 element: <ManageTest></ManageTest>
+            },
+            {
+                path: '/dashboard/updateTestData/:id',
+                element: <UpdateTest></UpdateTest>,
+                loader: ({params})=> fetch(`http://localhost:5000/alltests/${params.id}`)
             },
             {
                 path: '/dashboard/users',
