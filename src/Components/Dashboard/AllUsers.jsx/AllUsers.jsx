@@ -33,6 +33,41 @@ const AllUsers = () => {
             })
     }
 
+    const handleActiveUser = user =>{
+        axiosSecure.put(`users/active/${user._id}`)
+            .then(res => {
+                console.log(res.data);
+                if (res.data.modifiedCount > 0) {
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: `${user.name} is active now`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    refetch();
+                }
+            })
+    }
+
+
+    const handleBlockUser = user =>{
+        axiosSecure.put(`users/block/${user._id}`)
+            .then(res => {
+                console.log(res.data);
+                if (res.data.modifiedCount > 0) {
+                    Swal.fire({
+                        position: "center",
+                        icon: "success",
+                        title: `${user.name} is blocked now`,
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                    refetch();
+                }
+            })
+    }
+
     return (
         <div>
             <h2 className="text-3xl text-center text-[#1fc281] font-bold">All Users: {users.length}</h2>
@@ -67,7 +102,11 @@ const AllUsers = () => {
                                     </td>
                                     <td>{user.status}</td>
                                     <td>
-                                        
+                                        {
+                                            user.status === 'active' ? <button
+                                            onClick={()=> handleBlockUser(user)}
+                                             className="btn bg-red-500 btn-sm text-white">Block User</button> : <button onClick={()=>handleActiveUser(user)} className="btn bg-green-500 btn-sm text-white">Active User</button>
+                                        }
                                     </td>
                                 </tr>
                             )
