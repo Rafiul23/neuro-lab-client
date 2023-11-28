@@ -15,7 +15,7 @@ const Dashboard = () => {
 
             <div className="container mx-auto">
                 <div className="flex">
-                    <div className="bg-[#1fc281] w-1/5 h-screen sticky">
+                    <div className="bg-[#1fc281] w-1/5 h-screen sticky top-0 left-0">
                         <ul className="menu text-white">
 
                             {
