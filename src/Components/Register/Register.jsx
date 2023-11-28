@@ -47,7 +47,6 @@ const Register = () => {
         })
         if (res.data.success) {
            
-
             createUser(data.email, data.password)
             .then(result =>{
                 const loggedUser = result.user;
@@ -79,7 +78,8 @@ const Register = () => {
                 district: data.district,
                 upazila: data.upazila,
                 email: data.email,
-                password: data.password
+                password: data.password,
+                status: 'active'
             }
 
             axiosPublic.post('/users', userInfo)

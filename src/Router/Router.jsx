@@ -7,6 +7,16 @@ import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
 import AllTests from './../Components/AllTests/AllTests';
 import TestDetails from "../Components/TestDetails/TestDetails";
+import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
+import Dashboard from './../Components/Dashboard/Dashboard';
+import AdminHome from './../Components/Dashboard/AdminHome/AdminHome';
+import AddTest from './../Components/Dashboard/AddTest/AddTest';
+import ManageTest from './../Components/Dashboard/ManageTest/ManageTest';
+import AllUsers from './../Components/Dashboard/AllUsers.jsx/AllUsers';
+import Reservation from './../Components/Dashboard/Reservation/Reservation';
+import MyProfile from './../Components/Dashboard/MyProfile/MyProfile';
+import TestResult from './../Components/Dashboard/TestResult/TestResult';
+import Appointments from './../Components/Dashboard/Appointments/Appointments';
 
 const router = createBrowserRouter([
     {
@@ -35,15 +45,53 @@ const router = createBrowserRouter([
         },
         {
             path: '/alltests',
-            element: <AllTests></AllTests> 
+            element: <AllTests></AllTests>
         },
         {
             path: '/alltests/:id',
-            element: <TestDetails></TestDetails>,
+            element: <PrivateRoute><TestDetails></TestDetails></PrivateRoute>,
             loader: ({params})=> fetch(`http://localhost:5000/alltests/${params.id}`)
         }
       ]
     },
+    {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: '/dashboard/adminHome',
+                element: <AdminHome></AdminHome>
+            },
+            {
+                path: '/dashboard/addTest',
+                element: <AddTest></AddTest>
+            },
+            {
+                path: '/dashboard/manageTest',
+                element: <ManageTest></ManageTest>
+            },
+            {
+                path: '/dashboard/users',
+                element: <AllUsers></AllUsers>
+            },
+            {
+                path: '/dashboard/reservation',
+                element: <Reservation></Reservation>
+            },
+            {
+                path: '/dashboard/userProfile',
+                element: <MyProfile></MyProfile>
+            },
+            {
+                path: '/dashboard/testResult',
+                element: <TestResult></TestResult>
+            },
+            {
+                path: '/dashboard/appointments',
+                element: <Appointments></Appointments>
+            }
+        ]
+    }
   ]);
 
 export default router;  
