@@ -63,7 +63,7 @@ const CheckoutForm = ({price}) => {
                 Swal.fire({
                     position: "center",
                     icon: "success",
-                    title: "Your work has been saved",
+                    title: "Payment Successful",
                     showConfirmButton: false,
                     timer: 1500
                   });
