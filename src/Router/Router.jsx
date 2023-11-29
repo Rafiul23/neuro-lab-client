@@ -19,6 +19,7 @@ import TestResult from './../Components/Dashboard/TestResult/TestResult';
 import Appointments from './../Components/Dashboard/Appointments/Appointments';
 import UpdateTest from "../Components/Dashboard/UpdateTest/UpdateTest";
 import Payment from "../Components/Payment/Payment";
+import AddBanner from "../Components/Dashboard/AddBanner/AddBanner";
 
 const router = createBrowserRouter([
     {
@@ -60,7 +61,6 @@ const router = createBrowserRouter([
         path: '/dashboard',
         element: <Dashboard></Dashboard>,
         children: [
-           
             {
                 path: '/dashboard/adminHome',
                 element: <PrivateRoute><AdminHome></AdminHome></PrivateRoute>
@@ -68,6 +68,10 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/addTest',
                 element: <AddTest></AddTest>
+            },
+            {
+                path: '/dashboard/addBanner',
+                element: <AddBanner></AddBanner>
             },
             {
                 path: '/dashboard/manageTest',

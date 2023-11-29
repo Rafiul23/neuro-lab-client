@@ -35,7 +35,10 @@ const Dashboard = () => {
                                         All Tests
                                     </NavLink>
                                     </li>
-                                   
+                                   <li><NavLink to='/dashboard/addBanner'>
+                                    <FaPlus></FaPlus>
+                                    Add Banner
+                                    </NavLink></li>
                                     <li><NavLink to='/dashboard/users'>
                                         <FaUsers></FaUsers>
                                         All Users
