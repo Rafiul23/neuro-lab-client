@@ -1,11 +1,11 @@
 import { Helmet } from "react-helmet-async";
-import { FaCalendar, FaFile, FaHome, FaList, FaPhoneAlt, FaPlus,  FaUsers } from "react-icons/fa";
+import { FaCalendar, FaFile, FaHome, FaList, FaPhoneAlt, FaPlus, FaUsers } from "react-icons/fa";
 import { NavLink, Outlet } from "react-router-dom";
 
 
 const Dashboard = () => {
 
-    const isAdmin = true;
+    const isAdmin = false;
 
     return (
         <>
@@ -35,9 +35,13 @@ const Dashboard = () => {
                                         All Tests
                                     </NavLink>
                                     </li>
-                                   <li><NavLink to='/dashboard/addBanner'>
-                                    <FaPlus></FaPlus>
-                                    Add Banner
+                                    <li><NavLink to='/dashboard/addBanner'>
+                                        <FaPlus></FaPlus>
+                                        Add Banner
+                                    </NavLink></li>
+                                    <li><NavLink to='/dashboard/allBanners'>
+                                        <FaList></FaList>
+                                        All Banners
                                     </NavLink></li>
                                     <li><NavLink to='/dashboard/users'>
                                         <FaUsers></FaUsers>
@@ -56,11 +60,11 @@ const Dashboard = () => {
                                         My Profile
                                     </NavLink>
                                     </li>
-                                   
+
                                     <li>
                                         <NavLink to='/dashboard/testResult'>
-                                        <FaFile></FaFile>    
-                                        Test Result
+                                            <FaFile></FaFile>
+                                            Test Result
                                         </NavLink>
                                     </li>
                                     <li><NavLink to='/dashboard/appointments'>
@@ -78,7 +82,7 @@ const Dashboard = () => {
                                 Home
                             </NavLink>
                             </li>
-                            
+
                             <li><NavLink to='/contact'>
                                 <FaPhoneAlt></FaPhoneAlt>
                                 Contact
