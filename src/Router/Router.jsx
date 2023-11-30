@@ -62,7 +62,7 @@ const router = createBrowserRouter([
         {
             path: '/alltests/:id',
             element: <PrivateRoute><TestDetails></TestDetails></PrivateRoute>,
-            loader: ({params})=> fetch(`http://localhost:5000/alltests/${params.id}`)
+            loader: ({params})=> fetch(`https://neuro-lab-server.vercel.app/alltests/${params.id}`)
         }
       ]
     },
@@ -93,7 +93,7 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/updateTestData/:id',
                 element: <AdminRoute><UpdateTest></UpdateTest></AdminRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/alltests/${params.id}`)
+                loader: ({params})=> fetch(`https://neuro-lab-server.vercel.app/alltests/${params.id}`)
             },
             {
                 path: '/dashboard/users',
