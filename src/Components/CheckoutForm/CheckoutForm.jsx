@@ -6,7 +6,7 @@ import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
 
 
-const CheckoutForm = ({price}) => {
+const CheckoutForm = ({price, test}) => {
 
     const [error, setError] = useState('');
     const stripe = useStripe();
@@ -16,6 +16,8 @@ const CheckoutForm = ({price}) => {
     const [clientSecret, setClientSecret] = useState('');
     const axiosSecure = useAxiosSecure();
     console.log(price);
+
+    const { _id, image, test_name, slot, test_description, date } = test;
 
     useEffect(()=>{
         axiosSecure.post('/create-payment-intent', {price: price} )
@@ -60,13 +62,27 @@ const CheckoutForm = ({price}) => {
             if(paymentIntent.status === 'succeeded'){
                 console.log('transaction id', paymentIntent.id);
                 setTransactionId(paymentIntent.id);
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "Payment Successful",
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
+                const appointmentInfo = {
+                    email: user?.email,
+                    image,
+                    test_name,
+                    test_description, 
+                    date, 
+                    price
+                };
+                axiosSecure.post('/appointment', appointmentInfo)
+                .then(res =>{
+                    if(res.data.insertedId){
+                        Swal.fire({
+                            position: "center",
+                            icon: "success",
+                            title: "Payment Successful and confirmed appointment",
+                            showConfirmButton: false,
+                            timer: 1500
+                          });
+                    }
+                })
+                
             }
         }
 

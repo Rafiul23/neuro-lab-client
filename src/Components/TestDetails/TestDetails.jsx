@@ -63,7 +63,7 @@ const TestDetails = () => {
                         </div>
                     </dialog>
 
-                    <Payment price={reducedPrice}></Payment>
+                    <Payment test={test} price={reducedPrice}></Payment>
                 </div>
             </div>
         </div>

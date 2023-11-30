@@ -105,7 +105,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/appointments',
-                element: <Appointments></Appointments>
+                element: <PrivateRoute><Appointments></Appointments></PrivateRoute>
             }
         ]
     }
