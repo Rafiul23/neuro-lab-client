@@ -22,6 +22,7 @@ import Payment from "../Components/Payment/Payment";
 import AddBanner from "../Components/Dashboard/AddBanner/AddBanner";
 import AllBanners from "../Components/Dashboard/AllBanners/AllBanners";
 import AdminRoute from "../Components/AdminRoute/AdminRoute";
+import Services from "../Components/Services/Services";
 
 const router = createBrowserRouter([
     {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
         {
             path: '/contact',
             element: <Contact></Contact>
+        },
+        {
+            path: '/services',
+            element: <Services></Services>
         },
         {
             path: '/register',

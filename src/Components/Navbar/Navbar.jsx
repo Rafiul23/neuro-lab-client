@@ -19,31 +19,37 @@ const Navbar = () => {
     const navlinks = <>
         <li className='mr-4'><NavLink to='/'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold underline md:border-b-2" : "text-white"
             }
         >Home</NavLink></li>
 
         <li className='mr-4'><NavLink to='/about'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold underline md:border-b-2" : "text-white"
             }
         >About Us</NavLink></li>
 
         <li className='mr-4'><NavLink to='/contact'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold underline md:border-b-2" : "text-white"
             }
         >Contact Us</NavLink></li>
 
+        <li className='mr-4'><NavLink to='/services'
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold underline md:border-b-2" : "text-white"
+            }
+        >Our Services</NavLink></li>
+
         { user && <li className='mr-4'><NavLink to='/dashboard'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold underline md:border-b-2" : "text-white"
             }
         >Dashboard</NavLink></li>}
 
         <li className='mr-4'><NavLink to='/register'
             className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "pb-2 text-white font-bold border-b-2" : "text-white"
+                isPending ? "pending" : isActive ? "pb-2 text-white font-bold underline md:border-b-2" : "text-white"
             }
         >Register</NavLink></li>
     </>
