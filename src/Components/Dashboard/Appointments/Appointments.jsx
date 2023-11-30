@@ -12,7 +12,7 @@ const Appointments = () => {
     const axiosSecure = useAxiosSecure();
 
     const { refetch, data: appointments = [] } = useQuery({
-        queryKey: ['appointmentss'],
+        queryKey: ['appointments'],
         queryFn: async () => {
             const res = await axiosSecure.get(`/appointments/${email}`);
             return res.data;

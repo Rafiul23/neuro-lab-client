@@ -1,16 +1,48 @@
 
 import { useState } from 'react';
 import useAxiosSecure from './../../../Hooks/useAxiosSecure';
+import { useQuery } from '@tanstack/react-query';
+import Swal from 'sweetalert2';
 
 const AllBanners = () => {
 
-    const [banners, setBanners] = useState([]);
+    
     const axiosSecure = useAxiosSecure();
 
-    axiosSecure.get('/banners')
-        .then(res => {
-            setBanners(res.data);
-        })
+    const { refetch, data: banners = [] } = useQuery({
+        queryKey: ['banners'],
+        queryFn: async () => {
+            const res = await axiosSecure.get('/banners');
+            return res.data;
+        }
+    })
+
+    const handleDeleteBanner = banner => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+
+                axiosSecure.delete(`/banner/${banner._id}`)
+                    .then(res => {
+                        if (res.data.deletedCount > 0) {
+                            refetch();
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: `${banner.name} has been deleted successfully.`,
+                                icon: "success"
+                            });
+                        }
+                    })
+            }
+        });
+    }
 
 
 
@@ -21,7 +53,7 @@ const AllBanners = () => {
                     {/* head */}
                     <thead>
                         <tr>
-                            
+                            <th>#</th>
                             <th>Name</th>
                             <th>Coupon</th>
                             <th>Discount Rate</th>
@@ -57,7 +89,7 @@ const AllBanners = () => {
                             <button className='btn'>Make Banner</button>
                          </td>
                          <th>
-                             <button className="btn bg-red-500 text-white btn-xs">Delete</button>
+                             <button onClick={()=> handleDeleteBanner(banner)} className="btn bg-red-500 text-white btn-xs">Delete</button>
                          </th>
                      </tr>)
                        } 
