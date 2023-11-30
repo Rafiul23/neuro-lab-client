@@ -1,7 +1,7 @@
 import { useState } from "react";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import AllTestsCard from "../AllTestsCard/AllTestsCard";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
 
 
 const AllTests = () => {

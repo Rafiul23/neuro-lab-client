@@ -21,6 +21,7 @@ import UpdateTest from "../Components/Dashboard/UpdateTest/UpdateTest";
 import Payment from "../Components/Payment/Payment";
 import AddBanner from "../Components/Dashboard/AddBanner/AddBanner";
 import AllBanners from "../Components/Dashboard/AllBanners/AllBanners";
+import AdminRoute from "../Components/AdminRoute/AdminRoute";
 
 const router = createBrowserRouter([
     {
@@ -64,36 +65,36 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/dashboard/adminHome',
-                element: <PrivateRoute><AdminHome></AdminHome></PrivateRoute>
+                element: <AdminRoute><AdminHome></AdminHome></AdminRoute>
             },
             {
                 path: '/dashboard/addTest',
-                element: <AddTest></AddTest>
+                element: <AdminRoute><AddTest></AddTest></AdminRoute>
             },
             {
                 path: '/dashboard/addBanner',
-                element: <AddBanner></AddBanner>
+                element: <AdminRoute><AddBanner></AddBanner></AdminRoute>
             },
             {
                 path: '/dashboard/allBanners',
-                element: <AllBanners></AllBanners>
+                element: <AdminRoute><AllBanners></AllBanners></AdminRoute>
             },
             {
                 path: '/dashboard/manageTest',
-                element: <ManageTest></ManageTest>
+                element: <AdminRoute><ManageTest></ManageTest></AdminRoute>
             },
             {
                 path: '/dashboard/updateTestData/:id',
-                element: <UpdateTest></UpdateTest>,
+                element: <AdminRoute><UpdateTest></UpdateTest></AdminRoute>,
                 loader: ({params})=> fetch(`http://localhost:5000/alltests/${params.id}`)
             },
             {
                 path: '/dashboard/users',
-                element: <AllUsers></AllUsers>
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
             },
             {
                 path: '/dashboard/reservation',
-                element: <Reservation></Reservation>
+                element: <AdminRoute><Reservation></Reservation></AdminRoute>
             },
             {
                 path: '/dashboard/userProfile',
@@ -101,7 +102,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/testResult',
-                element: <TestResult></TestResult>
+                element: <PrivateRoute><TestResult></TestResult></PrivateRoute>
             },
             {
                 path: '/dashboard/appointments',
