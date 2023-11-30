@@ -23,11 +23,13 @@ import AddBanner from "../Components/Dashboard/AddBanner/AddBanner";
 import AllBanners from "../Components/Dashboard/AllBanners/AllBanners";
 import AdminRoute from "../Components/AdminRoute/AdminRoute";
 import Services from "../Components/Services/Services";
+import ErrorPage from "../ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <Root></Root>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: "/",
@@ -55,7 +57,7 @@ const router = createBrowserRouter([
         },
         {
             path: '/alltests',
-            element: <AllTests></AllTests>
+            element: <PrivateRoute><AllTests></AllTests></PrivateRoute>
         },
         {
             path: '/alltests/:id',

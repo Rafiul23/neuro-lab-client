@@ -46,7 +46,7 @@ const Login = () => {
                     timer: 1500
                   });
                
-                navigate(location?.state ? location.state : '/');
+                navigate(location?.state ? location.state : '/dashboard');
             })
             .catch(error => console.log(error))
     }
