@@ -1,8 +1,17 @@
-# React + Vite
+- **Project Name: Neuro Lab (A diagnostic center management website)** <br/>
+link: https://musical-biscotti-6995f8.netlify.app/  <br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Project details: 
+<li>This project is about diagnostic center management website.</li>
+<li>There are several number of tests.</li>
+<li>A patient can book a test and can pay his charge by stripe payment system.</li>
+<li>The User must have logged in to get all advantages</li>
+<li>A coupon code can be applied to get a discount.</li>
+<li>In this website, an admin can post a test, can update a test data and also can delete a test.</li>
+<li>He can also delete a user, can block a user and also can activate a user.</li>
+      
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<p>
+<strong>  <em> Used language: React, Tailwind, Mongodb, Express, Daisyui </em></strong>
+</p>
